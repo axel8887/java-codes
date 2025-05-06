@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this licens
+ */
+
+package com.mycompany.transporte;
+
+/**
+ *
+ * @author axelm
+ */
+public class Transportes {
+
+    public static void main(String[] args) {
+           //crear un vehiculo
+     VehiculoTerrestre vehiculoTerrestre= new VehiculoTerrestre("Nissan","Skilen gtr34 ",4);
+     
+     VehiculoAcuatico vehiculoAcuatico = new VehiculoAcuatico("Lancha ","Yamaha","Motor");
+     
+     //Mostrar la informacion de los vehiculos
+        System.out.println("");
+        System.out.println("Informacion  del vehiculo Terrestre: ");
+        vehiculoTerrestre.mostrarinfo();
+        
+        System.out.println("");
+        System.out.println("Informacion del vehiculo Acuatico: ");
+        vehiculoAcuatico.mostrarinfo();
+        
+     
+    }
+}
+    
