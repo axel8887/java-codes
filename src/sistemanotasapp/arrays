@@ -1,0 +1,117 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package operacionesconarreglos;
+
+/**
+ *
+ * @author axelm
+ */
+public class OperacionesConArreglos {
+
+    public static void main(String[] args) {
+        // Arrays Definidos
+        int[] arreglo1 = {5, 10, 15, 20, 25};
+        int[] arreglo2 = {1, 2, 3, 4, 5};
+
+        //Sumar 2 Arreglos elementos por elementos
+        int[] suma = new int[arreglo1.length];
+            
+        System.out.println("-------------------------------AREGLO 1-------------------------------");
+        for (int i = 0; i < arreglo1.length; i++) {
+            suma[i] = arreglo1[i] + arreglo2[i];
+
+        }
+        //El resultado de la suma 
+        System.out.println("La suma de los arreglos: ");
+        for (int i = 0; i < suma.length; i++) {
+            System.out.println("Elemnto: " + (i + 1) + ": " + suma[i]);
+        }
+        // Recorer arrglo e imprimir sus elementos 
+        System.out.println("Reccorer el arrelgo: ");
+        for (int i = 0; i < arreglo1.length; i++) {
+            System.out.println("El elemnto " + (i + 1) + ": " + arreglo1[i]);
+        }
+        //Multiplicacipn de elementos
+        int[] Multiplicacion = new int[arreglo2.length];
+        for (int i = 0; i < arreglo2.length; i++) {
+            Multiplicacion[i] = arreglo1[i] * arreglo2[i];
+        }
+        // El resultado de la Multiplicacion
+        System.out.println("Multiplicacion del arreglo: ");
+        for (int i = 0; i < Multiplicacion.length; i++) {
+            System.out.println("Elemento: " + (i + 1) + ": " + Multiplicacion[i]);
+        }
+        // Extraer inforamacion: Valor maximo, minimo y promedio
+        int max = arreglo1[0];
+        int min = arreglo1[0];
+        int sumaTotal = 0;
+        for (int i = 0; i < arreglo1.length; i++) {
+            //Primero encontrar el maximo y el minimo 
+            if (arreglo1[i] > max) {
+                max = arreglo1[i];
+            }
+            if (arreglo1[i] < min) {
+                min = arreglo1[i];
+            }
+            //Sumar los elementos para calcular el promedio
+            sumaTotal += arreglo1[i];
+        }
+        //calcular el promedio
+        double promedio = (double) sumaTotal / arreglo1.length;
+        System.out.println("informacion extraida del arreglo1");
+        System.out.println("Valor Maximo: " + max);
+        System.out.println("Valor Minimo: " + min);
+        System.out.println("Valor promedio: " + promedio);
+        
+        System.out.println("-------------------------------AREGLO 2-------------------------------");
+
+        // Realizar lo mismo pero con el arreglo2[i]
+        for (int i = 0; i < arreglo1.length; i++) {
+            suma[i] = arreglo1[i] + arreglo2[i];
+
+        }
+        //El resultado de la suma 
+        System.out.println("La suma de los arreglos: ");
+        for (int i = 0; i < suma.length; i++) {
+            System.out.println("Elemnto: " + (i + 1) + ": " + suma[i]);
+        }
+        // Recorer arrglo e imprimir sus elementos 
+        System.out.println("Reccorer el arrelgo: ");
+        for (int i = 0; i < arreglo2.length; i++) {
+            System.out.println("El elemnto " + (i + 1) + ": " + arreglo2[i]);
+        }
+        //Multiplicacipn de elementos
+
+        for (int i = 0; i < arreglo1.length; i++) {
+            Multiplicacion[i] = arreglo1[i] * arreglo2[i];
+        }
+        // El resultado de la Multiplicacion
+        System.out.println("Multiplicacion del arreglo: ");
+        for (int i = 0; i < Multiplicacion.length; i++) {
+            System.out.println("Elemento: " + (i + 1) + ": " + Multiplicacion[i]);
+        }
+        // Extraer inforamacion: Valor maximo, minimo y promedio
+        int max2 = arreglo2[0];
+        int min2 = arreglo2[0];
+        int sumaTota2 = 0;
+        for (int i = 0; i < arreglo2.length; i++) {
+            //Primero encontrar el maximo y el minimo 
+            if (arreglo2[i] > max2) {
+                max2 = arreglo2[i];
+            }
+            if (arreglo2[i] < min2) {
+                min2 = arreglo2[i];
+            }
+            //Sumar los elementos para calcular el promedio
+            sumaTota2 += arreglo2[i];
+        }
+        //calcular el promedio
+        double promedio2 = (double) sumaTotal / arreglo2.length;
+        System.out.println("informacion extraida del arreglo1");
+        System.out.println("Valor Maximo: " + max2);
+        System.out.println("Valor Minimo: " + min2);
+        System.out.println("Valor promedio: " + promedio2);
+    }
+} 
